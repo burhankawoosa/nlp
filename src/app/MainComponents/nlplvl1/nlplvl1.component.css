@@ -1,0 +1,64 @@
+.pageheading{
+    text-align: center;
+    padding-top:2%;
+}
+.pageheading h1{
+    font-size: 45px;
+    color: #3f51b5;
+}
+.pageheading h2{
+    font-size: 25px;
+}
+.uploadsection{
+    background-color: #FFFFFF;
+    margin-left: 35%;
+    margin-right: 35%;
+    padding: 12px 20px;
+    box-shadow: inset 0px 0px 4px 0px rgb(0 0 0 / 25%);
+    border-radius: 10px;
+}
+.uploadsection button{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.mainbox{
+    margin-top: 10px;
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+.leftdivtext{
+text-align: center;
+}
+.rightdivtext{
+    text-align: center;
+}
+.leftdiv{
+    background: #FFFFFF;
+    box-shadow: inset 5px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    margin-right: 25px;
+    padding-top: 15px!important;
+    
+}
+.leftdiv textarea{
+    text-align: justify;
+   
+}
+.rightdiv{
+    background: #EBEBEB;
+box-shadow: inset 5px 0px 4px rgba(0, 0, 0, 0.25);
+border-radius: 5px;
+height: 100%;
+padding-right: 0px !important;
+}
+.rightdiv button{
+    margin-left: 20%;
+    margin-right:20%;
+    margin-bottom: 18px;
+}

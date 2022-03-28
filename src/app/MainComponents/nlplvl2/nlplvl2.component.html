@@ -1,0 +1,69 @@
+<div class="pageheading">
+    <h1>Medical Annotators Tool</h1>
+    <h2>Level 2</h2>
+    <div class="uploadsection">
+    <input type="file" (change)="onFileSelect($event)">
+    <button mat-raised-button color="primary" type="submit">Upload</button>
+  </div>
+</div>
+
+<div class="mainbox">
+    <!-- main box headings -->
+    <div fxLayout="row wrap">
+        <div class="leftdivtext" fxFlex="50%">
+            <h2>Orignal-Segregated file / Segregated Tabular File</h2>
+        </div>
+        <div class="rightdivtext" fxFlex="50%">
+            <h2>Create New File with Changes</h2>
+        </div>
+    </div>
+
+<!-- main box contents -->
+    <div fxLayout="row wrap" >
+    <div class="leftdiv" fxFlex="50%">
+    
+        <textarea matInput cdkTextareaAutosize placeholder="No File Selected..." name="message" ngModel></textarea>
+    </div>
+    <div class="rightdiv" fxFlex="45%">
+        <form class="example-form" fxLayout="column" #mailform="ngForm" >
+            <mat-label>Select Section from Dropdown</mat-label>
+            <mat-form-field appearance="fill">
+                <mat-select>
+                  <mat-option *ngFor="let label of labels" [value]="label.value">
+                    {{label.viewValue}}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+              <mat-label>Selected Section</mat-label>
+            <mat-form-field class="example-full-width" appearance="fill">
+                <textarea matInput cdkTextareaAutosize placeholder="" name="message" ngModel></textarea>
+              </mat-form-field>
+              
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Imported  Sentence</mat-label>
+                <textarea matInput cdkTextareaAutosize placeholder="" name="message" ngModel></textarea>
+              </mat-form-field>
+
+              <mat-form-field class="search" appearance="fill">
+             
+                <textarea matInput cdkTextareaAutosize placeholder="Select Question/Type Manually" name="message" ngModel></textarea>
+                <mat-icon matSuffix>search</mat-icon>
+            </mat-form-field>
+              <mat-form-field class="search" appearance="fill">
+               
+                <textarea matInput cdkTextareaAutosize placeholder="Select Question/Type Manually" name="message" ngModel></textarea>
+                <mat-icon matSuffix>search</mat-icon>
+              </mat-form-field>
+        
+            <button mat-raised-button color="primary" type="submit">Create Q&A</button>
+          </form>
+
+          <div class="generated__qa">
+            <mat-label>Generated Question Answer Pairs</mat-label>
+            <textarea matInput cdkTextareaAutosize placeholder="" name="message" ngModel></textarea>
+          </div>
+    </div>
+
+    
+</div>
+</div>

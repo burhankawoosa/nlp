@@ -1,0 +1,71 @@
+<div class="pageheading">
+    <h1>Medical Annotators Tool</h1>
+    <h2>Level 1</h2>
+    <div class="uploadsection">
+      <form>
+    <input type="file" (change)="onFileSelect($event)">
+    <button mat-raised-button color="primary" type="submit" (click)="onClickUpload()">Upload</button>
+  </form>
+  </div>
+</div>
+
+<div class="mainbox">
+    <!-- main box headings -->
+    <div fxLayout="row wrap">
+        <div class="leftdivtext" fxFlex="50%">
+            <h2>Original Unsegregated File</h2>
+        </div>
+        <div class="rightdivtext" fxFlex="50%">
+            <h2>Segregated into Sections</h2>
+        </div>
+    </div>
+
+<!-- main box contents -->
+    <div fxLayout="row wrap" >
+    <div class="leftdiv" fxFlex="50%">
+    
+        <textarea matInput cdkTextareaAutosize placeholder="No File Selected..." name="message"  ngModel></textarea>
+    </div>
+    <div class="rightdiv" fxFlex="45%">
+        <form class="example-form" fxLayout="column" #mailform="ngForm" >
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>CHEIF COMPLAINT /REASON FOR CONSULTATION (CONSULT)</mat-label>
+                <textarea matInput cdkTextareaAutosize placeholder="" name="message" ngModel></textarea>
+              </mat-form-field>
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>HISTORY OF PRESENT ILLNESS</mat-label>
+                <textarea matInput cdkTextareaAutosize placeholder="" name="message" ngModel></textarea>
+              </mat-form-field>
+              <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>PAST MEDICAL HISTORY</mat-label>
+                <textarea matInput cdkTextareaAutosize placeholder="" name="message" ngModel></textarea>
+              </mat-form-field>
+          
+            <mat-form-field class="example-full-width" appearance="fill">
+              <mat-label>PAST SURGICAL HISTORY</mat-label>
+              <textarea matInput cdkTextareaAutosize placeholder="" name="message" ngModel></textarea>
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width" appearance="fill">
+             <mat-label>CURRENT/HOME MEDICATIONS</mat-label>
+              <textarea matInput cdkTextareaAutosize placeholder="" name="message" ngModel></textarea>
+            </mat-form-field>
+            <mat-form-field class="example-full-width" appearance="fill">
+              <mat-label>ALLERGIES</mat-label>
+              <textarea matInput cdkTextareaAutosize placeholder="" name="message" ngModel></textarea>
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width" appearance="fill">
+              <mat-label>SOCIAL HISTORY</mat-label>
+              <textarea matInput cdkTextareaAutosize placeholder="" name="message" ngModel></textarea>
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width" appearance="fill">
+              <mat-label>FAMILY HISTORY</mat-label>
+              <textarea matInput cdkTextareaAutosize placeholder="" name="message" ngModel></textarea>
+            </mat-form-field>
+            <button mat-raised-button color="primary" type="submit">Save & Send to Next Level</button>
+          </form>
+    </div>
+</div>
+</div>
